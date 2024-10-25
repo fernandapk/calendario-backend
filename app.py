@@ -6,8 +6,8 @@ from sqlite3 import Error
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5500"}})
-
+#CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5500"}})
+CORS(app, resources={r"/*": {"origins": ["http://127.0.0.1:5500", "https://fernandapk.github.io"]}})
 
 #############################################
 # Funciones para la base de datos
